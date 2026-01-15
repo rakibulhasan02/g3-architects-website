@@ -230,19 +230,31 @@ font-size: 2.8em;
 
 /* responsive media query */
 @media screen and (max-width:576px) {
-    
+    body{
+        overflow-x: hidden;
+    }
+
     .navbar,.team,.features{
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
     }
+   
     .nav-links{
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
     }
-.team-img-container,.sponsor-companies {
-    grid-template-columns: repeat(1,1fr);
-    
+.team-img-container{
+    grid-template-columns: 1fr;
+     width: 100%;
+     /* margin: 0 auto; */
+     justify-items: center;
 }
 .our-features{
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     /* margin-bottom: 50px; */
@@ -252,46 +264,52 @@ font-size: 2.8em;
     text-align: center;
 }
 .fact-container{
-    width: 100px;
-    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns:1fr;
 justify-content: center;
-gap: 2px;
+gap: 10px;
 }
 
 .sponsor-companies{
-    grid-template-columns: repeat(2,1fr);
-    /* justify-content:space-evenly; */
-    justify-items: center;
-    gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        justify-items: center;
+        gap: 10px;
+    }
 
-
-}
-.footer-container{
+/* .footer-container{
     text-align: center;
-    /* font-size: 0.8rem; */
+   
     font-size: 0.9rem;
-}
-.feature-architect  img{
-    width: 100%;
-}
-#experience-badge{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 8px 8px;
-    margin-top: 10px;
-    
+} */
+.feature-architect img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
 
+ #experience-badge{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 8px;
+        margin-top: 10px;
+    }
 
-}
-#experience-year {
-    font-size: 3rem;
-    
-}
-.feature-card{
-    text-align: center;
-}
+   #experience-year{
+        font-size: 3rem;
+    }
+
+    .feature-card,
+    .footer-container{
+        text-align: center;
+    }
 }
 /* some facts styles */
 
