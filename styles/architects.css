@@ -214,6 +214,7 @@ font-size: 2.8em;
 
 /* style footer */
 .footer-container{
+    margin: 0 auto;
     margin-top: 130px;
     background-color: #FFF4E7;
     display: grid;
@@ -223,6 +224,8 @@ font-size: 2.8em;
     justify-content: center;
     max-width: 1440px;
     height: 100px;
+    
+    /* width: 100%; */
 }
 
 /* responsive media query */
