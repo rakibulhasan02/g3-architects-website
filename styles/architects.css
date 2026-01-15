@@ -120,6 +120,20 @@ font-size: 2.8em;
   
     
 }
+#experience-badge{
+    border-radius: 8px;
+    font-size: 1.16rem;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 55px 42px;
+    margin-top: -132px;
+    margin-left: -92px;
+}
+#experience-year{
+    font-size: 4.1rem;
+    font-weight: 700;
+    line-height: 4.4rem;
+}
 /* team and  feature related feature */
 .team{
     align-items: center;
@@ -214,7 +228,7 @@ font-size: 2.8em;
 /* responsive media query */
 @media screen and (max-width:576px) {
     
-    .navbar,.team{
+    .navbar,.team,.features{
         flex-direction: column;
     }
     .nav-links{
@@ -254,13 +268,33 @@ gap: 2px;
     /* font-size: 0.8rem; */
     font-size: 0.9rem;
 }
+.feature-architect  img{
+    width: 100%;
 }
+#experience-badge{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 8px;
+    margin-top: 10px;
+    
 
+
+}
+#experience-year {
+    font-size: 3rem;
+    
+}
+.feature-card{
+    text-align: center;
+}
+}
 /* some facts styles */
 
 /* medium device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .team{
+    .team,.features{
         flex-direction: column;
     }
     .our-features{
@@ -285,5 +319,26 @@ gap: 10px;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     gap: 50px;
+}
+
+.feature-architect  img{
+    width: 100%;
+}
+#experience-badge{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 8px;
+    margin-top: 10px;
+    
+
+}
+#experience-year {
+    font-size: 3rem;
+    
+}
+.feature-card{
+    text-align: center;
 }
 }
